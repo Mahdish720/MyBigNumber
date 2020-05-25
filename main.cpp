@@ -22,10 +22,11 @@ int main() {
 //    x = -y;
 //    BigNumber z = -y;
 //    cout << (x != y) << endl;
+    MyBigNumber mybig1 = "5", mybig2 = -17;
 
-    MyBigNumber mybig1="-16";
+    cout<<mybig1*mybig2<<endl;
     BigNumber myBig1 = 344;
-    cout<<mybig1.multByOneDigit(3)<<endl;
+    cout<<mybig1.multByOneDigit(4)<<endl;
     cout<<(mybig1<<4);
     BigNumber myBig2 = "0000173";
     //cout << myBig1-myBig2<<endl;

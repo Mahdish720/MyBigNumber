@@ -22,18 +22,17 @@ protected:
     int8_t& operator[](size_t index);
 
 
+
     //max(a, b)    a.max(b)
 
 public:
     //must be private
-
     static BigNumber unsignedMax( const BigNumber& num1, const BigNumber& num2);
     static BigNumber unsignedMin( const BigNumber& num1, const BigNumber& num2);
     static bool unsignedGreaterOrEqual( const BigNumber& num1, const BigNumber& num2);
     static bool unsignedLessOrEqual( const BigNumber& num1, const BigNumber& num2);
     static BigNumber unsignedAdd( const BigNumber& num1, const BigNumber& num2 );
     static BigNumber unsignedSubtract( const BigNumber& num1, const BigNumber& num2 );
-
     // end of private list
 
     BigNumber( const std::string & str );
