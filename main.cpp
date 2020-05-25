@@ -2,6 +2,7 @@
 #include <cstdint>
 
 #include "BigNumber.h"
+#include "MyBigNumber.h"
 
 using namespace std;
 
@@ -21,11 +22,15 @@ int main() {
 //    x = -y;
 //    BigNumber z = -y;
 //    cout << (x != y) << endl;
-    BigNumber myBig1 = 2;
+
+    MyBigNumber mybig1="-16";
+    BigNumber myBig1 = 344;
+    cout<<mybig1.multByOneDigit(3)<<endl;
+    cout<<(mybig1<<4);
     BigNumber myBig2 = "0000173";
-    cout << myBig1-myBig2<<endl;
-    cout<<--myBig1<<endl;
-    cout<<myBig1--;
+    //cout << myBig1-myBig2<<endl;
+   // cout<<--myBig1<<endl;
+   // cout<<myBig1--;
     //cout<< (++myBig1)<<endl;
     //cout << BigNumber::unsignedLessOrEqual(myBig1, myBig2) << endl;
     //BigNumber a = BigNumber::unsignedSubtract(myBig1, myBig2);

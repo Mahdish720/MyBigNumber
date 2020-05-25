@@ -14,6 +14,10 @@ string
 regex
 -
 
+/cygdrive/c/Users/M Shafiei/Desktop/c++/AP/BigNumber/MyBigNumber.h
+BigNumber.h
+/cygdrive/c/Users/M Shafiei/Desktop/c++/AP/BigNumber/BigNumber.h
+
 /cygdrive/c/Users/M Shafiei/Desktop/c++/AP/BigNumber/main.cpp
 iostream
 -
@@ -21,4 +25,6 @@ cstdint
 -
 BigNumber.h
 /cygdrive/c/Users/M Shafiei/Desktop/c++/AP/BigNumber/BigNumber.h
+MyBigNumber.h
+/cygdrive/c/Users/M Shafiei/Desktop/c++/AP/BigNumber/MyBigNumber.h
 
