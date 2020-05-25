@@ -23,7 +23,7 @@ int main() {
 //    BigNumber z = -y;
 //    cout << (x != y) << endl;
     MyBigNumber mybig1 = "5", mybig2 = -17;
-
+    cout<<MyBigNumber::power(mybig1,2)<<endl;
     cout<<mybig1*mybig2<<endl;
     BigNumber myBig1 = 344;
     cout<<mybig1.multByOneDigit(4)<<endl;

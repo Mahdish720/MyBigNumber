@@ -19,6 +19,7 @@ public:
     static MyBigNumber MyunsignedMax( const MyBigNumber& num1, const MyBigNumber& num2);
     static MyBigNumber unsignedAdd( const MyBigNumber& num1, const MyBigNumber& num2 );
     static MyBigNumber unsignedSubtract( const MyBigNumber& num1, const MyBigNumber& num2 );
+    static MyBigNumber power(MyBigNumber big1,double a);
     //
 
     MyBigNumber( const std::string & str );

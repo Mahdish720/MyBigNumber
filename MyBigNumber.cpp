@@ -1,9 +1,7 @@
 #include "MyBigNumber.h"
-#include "iostream"
+#include "stdexcept"
 
 using namespace std;
-
-
 MyBigNumber::MyBigNumber(){}
 
 MyBigNumber::MyBigNumber(const std::string &str) : BigNumber(str) {}
@@ -232,6 +230,25 @@ MyBigNumber MyBigNumber::unsignedSubtract(const MyBigNumber &num1, const MyBigNu
     }
     return sub;
 }
+
+MyBigNumber MyBigNumber::power(MyBigNumber big1, double a) {
+    if (a < 0){
+        throw invalid_argument("Eror");
+    }
+    else if(a==0){
+        MyBigNumber temp=1;
+        return temp;
+    }
+    else{
+        MyBigNumber temp="1";
+        for(size_t i = 1;i<=a;++i){
+            temp=temp*big1;
+        }
+        return temp;
+    }
+}
+
+
 
 
 
