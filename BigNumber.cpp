@@ -400,9 +400,13 @@ BigNumber BigNumber:: operator>>( unsigned shift ){
 
 BigNumber operator-(const BigNumber &num1, const BigNumber &num2) {
     BigNumber sub;
-    if(num1.sign == num2.sign){   // -5 + 5
+    if(num1.sign == num2.sign){   // 0 - 1
         sub = BigNumber::unsignedSubtract(num1, num2);
-        sub.sign = BigNumber::unsignedMax(num1, num2).sign;
+        if(num1>=num2)
+            sub.sign=true;
+        else
+            sub.sign=false;
+
     }
     else{
         sub = BigNumber:: unsignedAdd(num1, num2);
@@ -420,8 +424,8 @@ BigNumber &BigNumber::operator++() {
 }
 
 BigNumber BigNumber::operator++(int) {
-    BigNumber temp;
-    temp=*this + 1;
+    BigNumber temp=(*this);
+    (*this)=(*this) + 1;
     return temp;
 }
 
@@ -431,7 +435,7 @@ BigNumber &BigNumber::operator--() {
 }
 
 BigNumber BigNumber::operator--(int) {
-    BigNumber temp;
-    temp=*this - 1;
+    BigNumber temp=*this;
+    (*this) = (*this) - 1;
     return temp;
 }

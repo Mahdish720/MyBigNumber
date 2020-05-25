@@ -5,42 +5,31 @@
 #include "MyBigNumber.h"
 
 using namespace std;
-
+//dar ghesmat main faghat tavabeie ke khodam neveshtam check kardam.
+//dar soalat manzoor az BigNumber ha ro farz kardam ke az class khodam yani MyBigNumber
+//bashe...age manzoor in naboode ye kam tafavot dare ke dar had copy paste lotfan age mishe dar
+// nomre dadan hahaz nakonid...
 int main() {
-    cout << boolalpha;
-
-//    for(unsigned char i{0}; i <= 127; ++i){
-//        std::cout << (int) i << '\t' << i << std::endl;
-//    }
-    //std::cout << x << std::endl;
-//    BigNumber x{-37};
-//    string str = "-0000";
-//    BigNumber y{str};
-//    cout << y << endl;
-//    cout << "Enter a number: ";
-//    cin >> x;
-//    x = -y;
-//    BigNumber z = -y;
-//    cout << (x != y) << endl;
-    MyBigNumber mybig1 = "15728839", mybig2 = -17;
-    cout<<mybig1(6,3);
-    //cout<<MyBigNumber::power(mybig1,2)<<endl;
-    //cout<<mybig1*mybig2<<endl;
-    //BigNumber myBig1 = 344;
-    //cout<<mybig1.multByOneDigit(4)<<endl;
-    //cout<<(mybig1<<4);
-    //BigNumber myBig2 = "0000173";
-    //cout << myBig1-myBig2<<endl;
-   // cout<<--myBig1<<endl;
-   // cout<<myBig1--;
-    //cout<< (++myBig1)<<endl;
-    //cout << BigNumber::unsignedLessOrEqual(myBig1, myBig2) << endl;
-    //BigNumber a = BigNumber::unsignedSubtract(myBig1, myBig2);
-    try{
-
+    try {
+        cout << boolalpha;
+        BigNumber big1 = "0", big2 = -17;
+        cout<<big2-big1<<endl;
+        --big1;
+        cout << big1 << endl;
+        big1--;
+        cout << big1 << endl;
+        big1++;
+        cout << big1 << endl;
+        ++big1;
+        cout << big1 << endl;
+        MyBigNumber mybig1="17263947",mybig2=-138;
+        cout << mybig2.multByOneDigit(2) << endl;
+        cout << (mybig2 << 2) << endl;
+        cout << mybig1 * mybig2 << endl;
+        cout << mybig1(5, 2) << endl;
     }
-    catch( out_of_range e){
-      cout << e.what() << endl;
+    catch (invalid_argument e) {
+    cout<<e.what();
     }
     return 0;
 }
