@@ -26,9 +26,9 @@ public:
     MyBigNumber( const char * myCharArray );
     MyBigNumber(const long & intNum );
 
-
     MyBigNumber & operator=(const MyBigNumber & myBigNumber);
     MyBigNumber operator<<( unsigned shift );
+    MyBigNumber operator() (unsigned start,unsigned index);
 
 
 };

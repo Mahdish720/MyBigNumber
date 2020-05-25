@@ -1,4 +1,5 @@
 #include "MyBigNumber.h"
+#include "iostream"
 #include "stdexcept"
 
 using namespace std;
@@ -247,6 +248,26 @@ MyBigNumber MyBigNumber::power(MyBigNumber big1, double a) {
         return temp;
     }
 }
+
+MyBigNumber MyBigNumber::operator()(unsigned start, unsigned index) {
+    if(start+1<index)
+        throw invalid_argument("Eror");
+    else{
+        MyBigNumber temp;
+        temp.numOfDigits=index;
+        temp.sign =sign;
+        temp.numArray=new int8_t (index);
+        size_t j=0;
+        //cout<< (int)(*this)[2]<<endl;
+        for(size_t i=start-index+1;j<index;j++){
+            //cout<<i<<"\t"<<j;
+            temp[j]=(*this).numArray[i];
+           ++i;
+        }
+        return temp;
+    }
+}
+
 
 
 
