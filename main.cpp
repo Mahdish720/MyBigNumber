@@ -21,16 +21,19 @@ int main() {
 //    x = -y;
 //    BigNumber z = -y;
 //    cout << (x != y) << endl;
-    BigNumber myBig1 = -17319;
+    BigNumber myBig1 = 2;
     BigNumber myBig2 = "0000173";
+    cout << myBig1-myBig2<<endl;
+    cout<<--myBig1<<endl;
+    cout<<myBig1--;
+    //cout<< (++myBig1)<<endl;
     //cout << BigNumber::unsignedLessOrEqual(myBig1, myBig2) << endl;
     //BigNumber a = BigNumber::unsignedSubtract(myBig1, myBig2);
-    cout << myBig1-myBig2 << "\t" << (myBig1>>3).getSign() << endl;
-//    try{
-//        cout << BigNumber::unsignedSubtract(myBig1, myBig2) << endl;
-//    }
-//    catch( out_of_range e){
-//        cout << e.what() << endl;
-//    }
+    try{
+
+    }
+    catch( out_of_range e){
+      cout << e.what() << endl;
+    }
     return 0;
 }

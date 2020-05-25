@@ -46,6 +46,10 @@ public:
     BigNumber & operator=(const BigNumber & rightNum);
     BigNumber & operator=(BigNumber && rightNum) noexcept ;   // move assignment overloading
     BigNumber operator-() const;
+    BigNumber& operator++();
+    BigNumber operator++(int);
+    BigNumber& operator--();
+    BigNumber operator--(int);
     int operator[](size_t index) const;
     bool operator==( const BigNumber & myBig) const;
     bool operator!=( const BigNumber & myBig) const;

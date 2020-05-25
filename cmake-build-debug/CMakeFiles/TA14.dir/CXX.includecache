@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/M Shafiei/Desktop/c++/AP/BigNumber/BigNumber.cpp
-BigNumber.h
-/cygdrive/c/Users/M Shafiei/Desktop/c++/AP/BigNumber/BigNumber.h
-stdexcept
--
-
 /cygdrive/c/Users/M Shafiei/Desktop/c++/AP/BigNumber/BigNumber.h
 cstdint
 -
