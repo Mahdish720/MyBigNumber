@@ -25,7 +25,7 @@ int main() {
     BigNumber myBig2 = "0000173";
     //cout << BigNumber::unsignedLessOrEqual(myBig1, myBig2) << endl;
     //BigNumber a = BigNumber::unsignedSubtract(myBig1, myBig2);
-    cout << (myBig1>>3) << "\t" << (myBig1>>3).getSign() << endl;
+    cout << myBig1-myBig2 << "\t" << (myBig1>>3).getSign() << endl;
 //    try{
 //        cout << BigNumber::unsignedSubtract(myBig1, myBig2) << endl;
 //    }
